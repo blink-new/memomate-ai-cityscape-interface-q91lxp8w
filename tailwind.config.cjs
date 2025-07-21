@@ -79,19 +79,37 @@ module.exports = {
   				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
-  			}
+  			},
+  			'cyber-dark': 'var(--cyber-dark)',
+  			'neon-red': 'var(--neon-red)',
+  			'neon-blue': 'var(--neon-blue)',
+  			'neon-purple': 'var(--neon-purple)',
+  			'neon-green': 'var(--neon-green)',
+  			'neon-orange': 'var(--neon-orange)',
+  			'neon-pink': 'var(--neon-pink)',
+  			'neon-yellow': 'var(--neon-yellow)'
   		},
   		fontFamily: {
   			sans: [
   				'Inter var',
   				'sans-serif'
+  			],
+  			orbitron: [
+  				'Orbitron',
+  				'monospace'
+  			],
+  			'space-mono': [
+  				'Space Mono',
+  				'monospace'
   			]
   		},
   		animation: {
   			'fade-in': 'fade-in 0.5s ease-out',
   			'slide-up': 'slide-up 0.5s ease-out',
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
+  			'scan-lines': 'scan-lines 2s linear infinite'
   		},
   		keyframes: {
   			'fade-in': {
@@ -126,6 +144,22 @@ module.exports = {
   				},
   				to: {
   					height: '0'
+  				}
+  			},
+  			'pulse-glow': {
+  				'0%': {
+  					boxShadow: '0 0 5px rgba(255, 0, 51, 0.5), 0 0 10px rgba(255, 0, 51, 0.3), 0 0 15px rgba(255, 0, 51, 0.2)'
+  				},
+  				'100%': {
+  					boxShadow: '0 0 10px rgba(255, 0, 51, 0.8), 0 0 20px rgba(255, 0, 51, 0.5), 0 0 30px rgba(255, 0, 51, 0.3)'
+  				}
+  			},
+  			'scan-lines': {
+  				'0%': {
+  					backgroundPosition: '0 0'
+  				},
+  				'100%': {
+  					backgroundPosition: '0 4px'
   				}
   			}
   		},
