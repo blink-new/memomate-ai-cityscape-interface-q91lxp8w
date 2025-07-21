@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Text } from '@react-three/drei'
 import { Mesh, BoxGeometry, EdgesGeometry } from 'three'
-import { Feature } from '../App'
+import { Feature } from '../types'
 
 interface BuildingProps {
   feature: Feature

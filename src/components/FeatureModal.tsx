@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { X, Zap, Users, BarChart3, Clock, Bell, MessageSquare, Settings } from 'lucide-react'
-import { Feature } from '../App'
+import { Feature } from '../types'
 
 interface FeatureModalProps {
   feature: Feature
